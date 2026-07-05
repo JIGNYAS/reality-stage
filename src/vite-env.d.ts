@@ -12,3 +12,7 @@ declare module "hydra-synth" {
     constructor(options?: HydraOptions);
   }
 }
+
+interface Window {
+  webkitAudioContext?: typeof AudioContext;
+}

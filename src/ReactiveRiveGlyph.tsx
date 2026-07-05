@@ -13,11 +13,13 @@ type ReactiveRiveGlyphProps = {
 };
 
 export function ReactiveRiveGlyph({ gesture, chapter }: ReactiveRiveGlyphProps) {
-  RuntimeLoader.setWasmUrl("/rive/rive.wasm");
-  RuntimeLoader.setWasmFallbackUrl("/rive/rive_fallback.wasm");
+  const baseUrl = import.meta.env.BASE_URL;
+
+  RuntimeLoader.setWasmUrl(`${baseUrl}rive/rive.wasm`);
+  RuntimeLoader.setWasmFallbackUrl(`${baseUrl}rive/rive_fallback.wasm`);
 
   const { RiveComponent, rive } = useRive({
-    src: "/rive/vehicles.riv",
+    src: `${baseUrl}rive/vehicles.riv`,
     autoplay: true,
     layout: new Layout({
       fit: Fit.Contain,
