@@ -3,7 +3,6 @@ dist/
 .venv/
 .uv-cache/
 .uv-python/
-verification/
 *.log
 *.tsbuildinfo
 .DS_Store
