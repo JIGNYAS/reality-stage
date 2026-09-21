@@ -1,8 +1,11 @@
 node_modules/
 dist/
-.venv/
-.uv-cache/
-.uv-python/
 *.log
 *.tsbuildinfo
 .DS_Store
+
+# Local health data and OAuth credentials - never commit these.
+data/
+client_secret*.json
+tokens.json
+.env

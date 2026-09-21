@@ -1,0 +1,16 @@
+{
+  "name": "fitbit-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "login": "pnpm --filter @fitbit-lab/server login",
+    "sync": "pnpm --filter @fitbit-lab/server sync",
+    "inspect": "pnpm --filter @fitbit-lab/server inspect",
+    "server": "pnpm --filter @fitbit-lab/server dev",
+    "web": "pnpm --filter @fitbit-lab/web dev",
+    "dev": "pnpm --parallel --filter @fitbit-lab/server --filter @fitbit-lab/web dev",
+    "build": "pnpm --filter @fitbit-lab/web build",
+    "test": "pnpm --filter @fitbit-lab/server test"
+  }
+}

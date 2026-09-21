@@ -1,0 +1,18 @@
+{
+  "name": "@fitbit-lab/server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-sqlite --no-warnings --experimental-strip-types src/index.ts",
+    "login": "node --experimental-sqlite --no-warnings --experimental-strip-types src/cli.ts login",
+    "sync": "node --experimental-sqlite --no-warnings --experimental-strip-types src/cli.ts sync",
+    "inspect": "node --experimental-sqlite --no-warnings --experimental-strip-types src/cli.ts inspect",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-sqlite --no-warnings --experimental-strip-types src/selftest.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
