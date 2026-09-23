@@ -9,3 +9,8 @@ data/
 client_secret*.json
 tokens.json
 .env
+
+# Agent skills installed via `npx skills add` - kept local, not shared.
+.agents/
+.claude/
+skills-lock.json
